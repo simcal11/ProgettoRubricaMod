@@ -178,7 +178,14 @@ public final class FinestraPrincipale extends javax.swing.JFrame {
 
             }
         } catch (NullPointerException e) {
-            System.out.println("NullPointerException");
+            System.out.println("NullPointerException: la cartella non esiste.");
+
+            File cartellaInformazioni = new File("informazioni");
+            if (!cartellaInformazioni.exists()) {
+                cartellaInformazioni.mkdirs();
+                System.out.println("Cartella "+ cartellaInformazioni.getName()+" è stata creata.");
+            }
+
         }
 
     }

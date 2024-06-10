@@ -21,9 +21,11 @@ public class FinestraLogin extends javax.swing.JFrame {
      */
     public FinestraLogin() {
         initComponents();
+        
+        System.out.println("utente1".hashCode());
 
-        //La password è stata fatta con "cocacola".hashCode();
-        Utente utente1 = new Utente("utente1", -899848277);
+        //La password è stata fatta con "utente1".hashCode();
+        Utente utente1 = new Utente("utente1", -118602920);
         
         arrayListUtenti.add(utente1);
 
