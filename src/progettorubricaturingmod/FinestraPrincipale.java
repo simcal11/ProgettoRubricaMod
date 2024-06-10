@@ -42,6 +42,8 @@ public final class FinestraPrincipale extends javax.swing.JFrame {
         popolaTabella();
 
         impostaImmaginiBottoni();
+        
+        System.out.println();
     }
 
     public void impostaImmaginiBottoni() {
